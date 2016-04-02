@@ -18,7 +18,7 @@ h2 span {
 
 .nav-menu ul {
   height: 100%;
-}
+  }
 
 .nav-menu li {
   list-style: none;
@@ -29,28 +29,27 @@ h2 span {
   height: 100%;
   font-weight: bold;
   width: 17%
-}
-
+  }
 .nav-menu a {
-  color: #fff;
+    color: #fff;
+      
   height: 100%
-}
-
+  }
 .nav-menu a:hover {
-  color: #888
-}
+    color: #888
+  }
 
 .nav-menu li:hover {
   background-color: #444;
-  border-style: solid;
-  border-color: #555;
-}
+      border-style: solid;
+    border-color: #555;
+  }
 
 .nav-menu ul {
-  text-align: center;
-  overflow: auto;
-  width: 100%;
-  height: 100%
+    text-align: center;
+    overflow: auto;
+    width: 100%;  
+    height: 100%
 }
 
 div.fixedheader {
@@ -60,16 +59,18 @@ div.fixedheader {
   left: 0px;
   width: 100%;
   color: #CCC;
-  background: #333;
+  background: #333;  
+  z-index: 9999;
 }
 
 div.fixedfooter {
-  height: 45px;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  color: #CCC;
-  background: #333;
+ position:fixed;
+	bottom:0px;
+	left:0px;
+	width:100%;
+	color:#CCC;
+	background:#333;
+	padding:8px;
 }
 
 .home {
@@ -97,7 +98,6 @@ div.fixedfooter {
   height: 100vh;
   margin-top: 45px;
   background-color: #505050;
-  background: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/subtle_stripes.png")
 }
 
 .about {
@@ -110,14 +110,14 @@ div.fixedfooter {
   height: 100vh;
   margin: 0 auto;
   padding: 1%;
-  /* Fallback for web browsers that don't support RGBa */
-  background-color: rgb(0, 0, 0);
-  /* RGBa with 0.6 opacity */
-  background-color: rgba(0, 0, 0, 0.6);
-  /* For IE 5.5 - 7*/
-  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
-  /* For IE 8*/
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+/* Fallback for web browsers that don't support RGBa */
+    background-color: rgb(0, 0, 0);
+    /* RGBa with 0.6 opacity */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
 }
 
 .contact {
@@ -145,9 +145,9 @@ div.fixedfooter {
   top: 0;
   left: 0;
   margin-top: 45px;
-  padding-bottom: 45px;
   width: 100% !important;
-  height: 100% !important;
+  height: 100% !important;  
+  background: #333;
 }
 
 iframe {
