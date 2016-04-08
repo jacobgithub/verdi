@@ -1,11 +1,25 @@
 body {
-  color: #ffffff;
-  background-color: #cccccc;
-  font-family="Arial, Helvetica, sans-serif";
-  background: url("https://scontent-lga3-1.xx.fbcdn.net/hphotos-xap1/t31.0-8/12719242_1124921570852651_7189379067647526620_o.jpg") no-repeat fixed center
+  color: rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+  font-family: Georgia, Times, Times New Roman, serif;
+  font-size: 19px;
+  line-height: 31px;
+  text-align: justify;
+  text-justify: inter-word;
+  background: url("https://scontent-lga3-1.xx.fbcdn.net/hphotos-xap1/t31.0-8/12719242_1124921570852651_7189379067647526620_o.jpg");
+  background-color: transparent;
+  background-attachment: fixed
 }
 
+
 /* HEADER SPACING */
+
+h1,
+h2,
+h3 {
+  font-family: Verdana, Geneva, sans-serif;
+}
+
 h2 span {
   margin-top: -45px;
   /* Size of fixed header */
@@ -16,38 +30,30 @@ h2 span {
 /* NAVIGATION */
 
 button {
-  background: transparent;
+  color: #648664;
+  background: #224d22;
   text-decoration: none;
   outline: none;
-  color: #CCC;
   width: 100%;
-<<<<<<< HEAD
+  border: none
 }
 
-h2 span {
-  margin-top: -45px;        /* Size of fixed header */
-  display: block;
-=======
-  border:none
-}
-
-.nav-menu ul {
-  height: 100%;
->>>>>>> origin/gh-pages
+.nav-menu {
+  margin: 0 auto;
 }
 
 .nav-menu li {
   list-style: none;
   float: left;
-  background: #333;
+  background: #224d22;
   border-style: solid;
-  border-color: #333;
+  border-color: #224d22;
   height: 100%;
   font-weight: bold;
 }
 
 .fixedheader li {
-  width: 22%
+  width: 25%
 }
 
 .fixedfooter li {
@@ -55,18 +61,18 @@ h2 span {
 }
 
 .nav-menu button {
-  color: #fff;
   height: 100%
 }
 
 .nav-menu button:hover {
-  background-color: #ffffff;
-  color: #3BB9FF 
+  background-color: #648664;
+  color: #144614
 }
 
 .nav-menu ul {
   text-align: center;
   overflow: auto;
+  margin: 0 auto;
   width: 100%;
   height: 100%
 }
@@ -77,13 +83,9 @@ div.fixedheader {
   top: 0px;
   left: 0px;
   width: 100%;
-  color: #CCC;
-  background: #333;
-<<<<<<< HEAD
-  padding: 10px;
-=======
+  color: #648664;
+  background: #224d22;
   z-index: 9999;
->>>>>>> origin/gh-pages
 }
 
 div.fixedfooter {
@@ -92,28 +94,17 @@ div.fixedfooter {
   bottom: 0px;
   left: 0px;
   width: 100%;
-  color: #CCC;
-<<<<<<< HEAD
-  background: #333;
-  padding: 10px;
-=======
-  background: #333;  
+  color: #648664;
+  background: #224d22;
   z-index: 9999;
->>>>>>> origin/gh-pages
 }
+
 
 /* HOME */
 
 .home {
   height: 100vh;
   margin-top: 45px;
-<<<<<<< HEAD
-  background: url("https://scontent-lga3-1.xx.fbcdn.net/hphotos-xap1/t31.0-8/12719242_1124921570852651_7189379067647526620_o.jpg") no-repeat fixed center;
-  background-size:cover;
-=======
-  background-color: transparent;
-  background-size: cover;
->>>>>>> origin/gh-pages
 }
 
 .donate {
@@ -125,9 +116,26 @@ div.fixedfooter {
   width: 90%
 }
 
+.btn {
+  background: #4c6f4c;
+  box-shadow: 0px 0px 0px 3px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ffffff
+}
+
+.btn-block:hover {
+  transform: scale(0.9);
+  transition: 0.5s;
+  color: #ffffff
+}
+
 .vhps-logo {
   width: 100%;
-  max-height: 500px;
+  max-height: 500px
 }
 
 #submit {
@@ -138,30 +146,100 @@ div.fixedfooter {
 .events {
   height: 100vh;
   margin-top: 45px;
-  background-color: #505050;
+  background-color: #ffffff;
+  color: rgba(0, 0, 0, 0.5)
 }
 
 
 /* ABOUT */
 
 .about {
-  height: 100vh;
-  margin-top: 45px;
-  background-color: transparent
+  height: 100%;
+  background-color: #ffffff;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 45px
 }
 
 .about p {
-  height: 100vh;
+  margin: 0 auto;
+  padding: 1%
+}
+
+
+/* HISTORY */
+
+.history {
   margin: 0 auto;
   padding: 1%;
-  /* Fallback for web browsers that don't support RGBa */
-  background-color: rgb(0, 0, 0);
-  /* RGBa with 0.6 opacity */
-  background-color: rgba(0, 0, 0, 0.6);
-  /* For IE 5.5 - 7*/
-  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
-  /* For IE 8*/
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+  background-color: #ffffff;
+  color: rgba(0, 0, 0, 0.5)
+}
+
+.history h2 {
+  color: #144614
+}
+
+.history a {
+  color: #144614
+}
+
+.history a:hover {
+  color: #648664
+}
+
+.hist-contents {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 45px
+}
+
+.article {
+  max-width: 960px;
+  margin-bottom: 75px;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.articlephoto {
+  float: left;
+  border: solid 1px;
+  background-color: #144614;
+  padding: 2px;
+  margin: 5px 10px 20px 5px
+}
+
+
+/* GALLERY */
+
+.gallery {
+  margin: 0 auto;
+  padding: 1%;
+  background-color: #ffffff;
+  height: 100%;
+  color: rgba(0, 0, 0, 0.5)
+}
+
+#gallery {
+  height: 100%;
+  margin-top: 55px;
+  background-color: #ffffff
+}
+
+.frame {
+  background-color: #144614 !important;
+  border-style: solid !important;
+  border-width: 2px !important;
+  padding-top: 9px !important;
+  width: 175px !important;
+  height: 175px !important;
+  text-align: center !important;
+  position: relative !important;
+  float: left !important;
+  border-color: #648664 !important;
+  margin: 0px 5px 5px 0px !important;
+  overflow: hidden !important;
+  color: #648664
 }
 
 
@@ -170,8 +248,19 @@ div.fixedfooter {
 .contact {
   height: 100vh;
   margin-top: 45px;
-  background: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/noise_lines.png");
-  background-color: #252525
+  background-color: #ffffff;
+}
+
+.contact h3 {
+  color: #144614
+}
+
+.contact a {
+  color: #144614
+}
+
+.contact a:hover {
+  color: #648664
 }
 
 
@@ -184,7 +273,6 @@ div.fixedfooter {
 
 #google-maps {
   display: block;
-  position: relative;
   // This is the aspect ratio height: 0;
   height: 100vh;
   overflow: hidden;
@@ -201,26 +289,33 @@ div.fixedfooter {
 }
 
 iframe {
-<<<<<<< HEAD
-	vertical-align: middle;
-=======
   vertical-align: middle;
 }
 
 
 /* jQuery ASSISTANCE */
 
+
 /* Initially hide divisions */
-.events, .history, .gallery, .about, .contact, .map {
+
+.events,
+.history,
+.gallery,
+.about,
+.contact,
+.map {
   display: none
 }
 
+
 /* Change BGC of active section's button */
+
 .btn-active {
-  color: black;
+  color: #144614;
   border-radius: 200px 3px 200px 0px;
-  background-color: #3BB9FF 
+  background-color: #648664
 }
+
 
 /* MEDIA QUERIES */
 
@@ -228,5 +323,30 @@ iframe {
   .vhps-logo {
     max-height: 200px
   }
->>>>>>> origin/gh-pages
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+
+@media only screen and (max-width: 320px) {
+  body {
+    font-size: 11px;
+    line-height: 18px
+  }
+  h2 {
+    font-size: 22px
+  }
+  .fixedheader li {
+    font-size: 10px
+  }
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+    line-height: 22px
+  }
 }
