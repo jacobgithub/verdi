@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8">
     <title>VHPS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    
+    
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
 
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="css/style.css">
 
-
-
-
+    
+    
+    
   </head>
 
   <body>
@@ -20,18 +20,14 @@
     <div class="nav-menu fixedheader">
 
   <ul class="nav-menu">
-    <li><a href="#home">Home</a></li>
-
-    <li><a href="#events">Events</a></li>
-
-    <li><a href="#about">About</a></li>
-
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#map">Map</a></li>
+      <li><button class="btn-active" id="home-btn">Home</button></li>
+      <li><button id="events-btn">Events</button></li>
+      <li><button id="history-btn">History</button></li>
+      <li><button id="gallery-btn">Gallery</button></li>
   </ul>
 
 </div>
-<div class="home">
+<div class="home" id="home-app">
   <h2>
 
   <span id="home">&nbsp;</span>
@@ -76,6 +72,7 @@
  <use xlink:href="#name-initials"></use>
 
 </svg>
+
   <div class="donate">
     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
       <input name="cmd" value="_s-xclick" type="hidden">
@@ -86,7 +83,7 @@
   </div>
 
 </div>
-<div class="events">
+<div class="events" id="events-app">
   <h2>
   <span id="events">&nbsp;</span>
   </h2>
@@ -96,8 +93,7 @@
     amet sollicitudin malesuada, nibh arcu bibendum enim, et lacinia urna felis vitae diam. Nulla mattis ligula ut massa tempus pharetra. Aliquam maximus, ipsum quis aliquam congue, nulla turpis elementum dui, eu egestas turpis ligula sit amet eros.
   </p>
 </div>
-
-<div class="about">
+<div class="about" id="about-app">
   <h2>
   <span id="about">&nbsp;</span>
   </h2>
@@ -107,8 +103,7 @@
     amet sollicitudin malesuada, nibh arcu bibendum enim, et lacinia urna felis vitae diam. Nulla mattis ligula ut massa tempus pharetra. Aliquam maximus, ipsum quis aliquam congue, nulla turpis elementum dui, eu egestas turpis ligula sit amet eros.
   </p>
 </div>
-
-<div class="contact">
+<div class="contact" id="contact-app">
   <h2>
   <span id="contact">&nbsp;</span>
   </h2>
@@ -118,34 +113,29 @@
     amet sollicitudin malesuada, nibh arcu bibendum enim, et lacinia urna felis vitae diam. Nulla mattis ligula ut massa tempus pharetra. Aliquam maximus, ipsum quis aliquam congue, nulla turpis elementum dui, eu egestas turpis ligula sit amet eros.
   </p>
 </div>
-
-<div class="map">
+<div class="map" id="map-app">
   <div id="google-maps">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3077.832954205237!2d-119.99098918435193!3d39.518259717712176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80995ad93ee57a69%3A0x9ab16018d083de9b!2s740+W+2nd+St%2C+Reno%2C+NV+89523!5e0!3m2!1sen!2sus!4v1459526077149"
-      width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      frameborder="0" style="border:0" allowfullscreen></iframe>
   </div>
-    <h2>
+  <h2>
   <span id="map">&nbsp;</span>
   </h2>
 </div>
-
-
 <div class="nav-menu fixedfooter">
   <ul class="nav-menu">
-    <li><a href="#home">Home</a></li>
-
-    <li><a href="#events">Events</a></li>
-
-    <li><a href="#about">About</a></li>
-
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#map">Map</a></li>
+      <li><button id="about-btn">About</button></li>
+      <li><button id="contact-btn">Contact</button></li>
+      <li><button id="map-btn">Map</button></li>
   </ul>
 </div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
 
+        <script src="index.js"></script>
 
-
-
-
+    
+    
+    
   </body>
 </html>
